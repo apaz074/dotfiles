@@ -1,0 +1,38 @@
+// ────────────── Output Configuration ──────────────
+// You can run `niri msg outputs` to get the correct name for your displays.
+// You will have to remove "/-" and edit it before it takes effect.
+// https://github.com/YaLTeR/niri/wiki/Configuration:-Outputs
+
+/- output "DP-1" {
+    mode "2560x1440@359.979" // Set resolution and refresh rate
+    scale 1 // No scaling (use 2 for HiDPI)
+}
+
+output "LG Electronics LG ULTRAWIDE 0x00017F9F" {
+  mode "2560x1080@100.000"
+  scale 1
+  position x=-320 y=-1080
+  variable-refresh-rate on-demand=true
+}
+
+output "eDP-1" {
+  mode "1920x1200@60.001"
+  scale 1.25
+  position x=0 y=0
+  variable-refresh-rate on-demand=true
+  layout {
+    center-focused-column "always"
+    default-column-width { proportion 0.97; }
+  }
+}
+
+output "Microstep MSI MAG323UPF Unknown" {
+  mode "3840x2160@160.000"
+  scale 1.25
+  position x=-576 y=-1728
+  variable-refresh-rate on-demand=true
+  layout {
+    center-focused-column "always"
+    default-column-width { proportion 0.9; }
+  }
+}
